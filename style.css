@@ -225,12 +225,84 @@ body {
       margin: 0 auto 35px auto;
       
   }
+  .footer {
+    background-image: url(./img/background_footer.png);
+    background-size: cover;
+    display: flex;
+    padding: 60px 10px 20px 10px;
+    justify-content: space-around;
+
+  }
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 33%;
+  }
+  .footer__logo {
+    max-width: 125px;
+    margin-bottom: 8px;
+  }
+  .footer__contact {
+    display: flex;
+    align-items: center;
+}
+  .footer__heading {
+  text-transform: uppercase;
+}
+  .footer__input {
+    display: flex;
+
+}
+.footer__form {
+  background: none;
+  width: 100%;
+  margin-right: 10px;
+  border: 1px solid #9e97b0;
+  font-size: 14px;
+  font-family: "Myriad Pro";
+  color: rgba(255, 255, 255, 0.749);
+  line-height: 1.857;
+  padding: 10px;
+}
+.footer__symbol {
+  margin-right: 15px;
+}
+
+  .footer__contact__text,
+  .footer__text,
+  .footer__heading,
+  .footer__contact
+   {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 1.857;
+  }
+  .footer__link {
+    margin: 25px 5px 0 5px;
+  }
+  .footer__button {
+    opacity: 0.65;
+  }
+  
+  
   @media (max-width: 940px) {
     .contact__forms {
       width: 300px;
     }
     .contact__partners {
       width: 300px;
+    }
+    .footer {
+      flex-wrap: wrap;
+    }
+    .footer__container {
+      min-width: 45%;
+    }
+    .footer__container__link {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
     }
   }
   
@@ -322,13 +394,21 @@ body {
     .video__story {
       margin-top: 50px;
     }
-    
+    .footer {
+      padding: 30px 10px 20px 10px;
+      flex-direction: column;
+      align-items: center;
   }
-@media (max-width: 570px) {
-  .contact__forms {
-    width: 400px;
+    .footer__container {
+      max-width: 70%;
+      align-items: center;
+    }
   }
-}
+  @media (max-width: 570px) {
+    .contact__forms {
+      width: 400px;
+    }
+  }
 
   @media (max-width: 500px) {
     .about {
@@ -376,22 +456,15 @@ body {
     .contact__submit {
       font-size: 13px;
       padding: 7px;
+    }
+    .contact__brads {
+      max-width: 300px;
+    }
+    .footer__form {
+      font-size: 12px;
+    }
+    .footer__button {
+      max-width: 55px;
+    }
   }
-  .contact__brads {
-    max-width: 300px;
-  }
   
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-
-
-
